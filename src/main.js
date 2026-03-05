@@ -33,11 +33,15 @@ var a = 4;
 test();
 
 function test() {
+	console.log("=========");
 	console.log(a);
 
+	console.log("=====@@====" + this);
 	{
 		var x = 111;
 	}
+
+	console.log("=====X====" + x);
 }
 
 const o = {
